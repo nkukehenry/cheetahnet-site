@@ -8014,3 +8014,7 @@ Section Title
     color: var(--theme-color2)!important;
   }
 
+  .text-light{
+    color: var(--theme-color-light)!important;
+  }
+
