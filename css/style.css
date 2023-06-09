@@ -43,7 +43,7 @@ License: copyright commercial
   --theme-color-light: #ffffff;
   --theme-color-dark: #0d0f10;
   --theme-color1: #020E29;
-  --theme-color2: #fcac3a;
+  --theme-color2: #F7941E;
   --theme-color3: #20222d;
   --theme-color4: #0f74ab;
   --theme-color5:#dcfaf9;
@@ -2227,7 +2227,7 @@ Main Header
   text-align: center;
   opacity: 1;
   font-size: 15px;
-  color: var(--theme-color-dark);
+  color: var(--theme-color-light);
   line-height: 30px;
   font-weight: 700;
   padding: 0;
@@ -2246,10 +2246,10 @@ Main Header
   margin-left: 10px;
 }
 .main-menu .navigation > li > a:hover {
-  color: var(--theme-color1);
+  color: var(--theme-color2);
 }
 .main-menu .navigation > li.current > a {
-  color: var(--theme-color1);
+  color: var(--theme-color2);
 }
 .main-menu .navigation > li.dropdown > a {
   padding-right: 15px;
@@ -8013,3 +8013,4 @@ Section Title
  .text-theme2{
     color: var(--theme-color2)!important;
   }
+
