@@ -40,7 +40,8 @@
 <div class="page-wrapper">
     
     <!-- Preloader -->
-    <div class="preloader"></div>
+    <?php include('preloader.php'); ?>
+    
     
     <!-- Main Header-->
     <header class="main-header header-style-two">
