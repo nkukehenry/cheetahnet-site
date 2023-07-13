@@ -499,7 +499,6 @@
 <script src="js/script.js"></script>
 </body>
 
-<!-- Mirrored from kodesolution.com/html/2023/cheetanet-html/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Jun 2023 04:22:19 GMT -->
-</html>
+
 
 

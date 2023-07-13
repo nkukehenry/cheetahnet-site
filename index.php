@@ -41,7 +41,7 @@
     
     <!-- Preloader -->
     <?php include('preloader.php'); ?>
-    
+
     <!-- Main Header-->
     <header class="main-header header-style-three">
         <!-- Header Top -->
@@ -215,7 +215,7 @@
                 <div class="image-column col-lg-3 col-md-12">
                     <div class="inner-column">
                         <div class="image-box">
-                            <figure class="image wow fadeInUp" data-wow-delay="1600ms"><img src="images/resource/all-surf.png" width="300px" alt=""></figure>
+                            <figure class="image wow fadeInUp" data-wow-delay="1600ms"><img src="images/resource/men.png"  alt=""></figure>
                         </div>
                     </div>
                 </div>
