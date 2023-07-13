@@ -47,6 +47,7 @@ License: copyright commercial
   --theme-color3: #20222d;
   --theme-color4: #0f74ab;
   --theme-color5:#dcfaf9;
+  --theme-color-blue:#2dc0ed;
   --bg-theme-color1: var(--theme-color1);
   --bg-theme-color2: var(--theme-color2);
   --bg-theme-color3: var(--theme-color3);
@@ -2695,7 +2696,7 @@ Header Style One
   margin-top: -46px;
   height: 165px;
   margin-right: 80px;
-  background-color: #f5f5f6;
+  /*background-color: #f5f5f6;*/
 }
 @media only screen and (max-width: 1800px) {
   .header-style-two .header-lower .logo-box {
@@ -8016,5 +8017,9 @@ Section Title
 
   .text-light{
     color: var(--theme-color-light)!important;
+  }
+  .text-blue{
+    color: var(--theme-color-blue);
+    font-weight: bold;
   }
 
