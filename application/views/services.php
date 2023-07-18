@@ -13,72 +13,57 @@
         <div class="bg bg-pattern-2"></div>
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="sub-title">Our Services</span>
-                <h2>Choose from our wide range of amazing  <br> internet packages</h2>
+                <span class="sub-title"><?php echo $page_service['service_heading']; ?></span>
+                <h2><?php echo (empty($subheading))?'Choose from our wide range of amazing
+internet packages':$subheading; ?></h2>
             </div>
             <div class="row">
+
+
                 <!-- Info Banner -->
-                <div class="info-banner col-lg-6 col-md-12 col-sm-12">
+                <?php  
+                $i=0;
+                foreach ($services as $row) {
+                    $i++;
+
+                 ?>
+            
+                <div class="info-banner col-lg-6 col-md-12 col-sm-12 <?php echo ($i>4)?'wow fadeInUp':'';?>" data-wow-delay="600ms"> 
                     <div class="content-box">
-                        <figure class="image"><img src="images/resource/image-1.jpg" alt=""></figure>
-                        <h4 class="title">Cheetahnet Home Internet</h4>
-                        <div class="price">Starting From <span class="text-blue">UGX 105,000</span> / <small>Month</small></div>
+                        <figure class="image"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt=""></figure>
+                        <h4 class="title"><?php echo $row['name']; ?></h4>
+                        <div class="price">Starting From <span class="text-blue">UGX 
+                            <?php echo number_format($row['price']); ?></span> / <small>Month</small></div>
                         <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
+                            <a href="https://api.whatsapp.com/send/?phone=<?php echo explode('/',$setting['top_bar_phone'])[0]; ?>&text=<?php echo urlencode($row['name']); ?>&type=phone_number&app_absent=0" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="info-banner col-lg-6 col-md-12 col-sm-12">
-                    <div class="content-box">
-                        <figure class="image"><img src="images/resource/image-1.jpg" alt=""></figure>
-                        <h4 class="title">Cheetahnet Home Internet</h4>
-                        <div class="price">Starting From <span class="text-blue">UGX 105,000</span> / <small>Month</small></div>
-                        <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
 
-                <div class="info-banner col-lg-6 col-md-12 col-sm-12">
-                    <div class="content-box">
-                        <figure class="image"><img src="images/resource/image-1.jpg" alt=""></figure>
-                        <h4 class="title">Cheetahnet Home Internet</h4>
-                        <div class="price">Starting From <span class="text-blue">UGX 105,000</span> / <small>Month</small></div>
-                        <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-banner col-lg-6 col-md-12 col-sm-12">
-                    <div class="content-box">
-                        <figure class="image"><img src="images/resource/image-1.jpg" alt=""></figure>
-                        <h4 class="title">Cheetahnet Home Internet</h4>
-                        <div class="price">Starting From <span class="text-blue">UGX 105,000</span> / <small>Month</small></div>
-                        <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
                 
             </div>
 
 
-             <div class="cta-box wow fadeInDown"  style="margin-top: 10px;">
-                <div class="info-box">
-                    <i class="icon fa fa-wifi"></i>
-                    <div class="text">Call Us Now for Connection</div>
-                    <h4 class="title"><a href="tel:1111111">+256 705 678 0895</a></h4>
-                </div>
-                <figure class="image"><img src="images/icons/dotted-map.png" alt=""></figure>
-            </div>
+             <?php include 'shared/call_cta.php'; ?>
 
         </div>
     </section>
-    <!--End Why Choose Us Four -->
+    <!--End Services Four -->
 
-    <!-- End About Section Six -->
+    <!-- Why Choose Us Four-->
+    <?php 
+
+     $pricing_item = $services[0];
+     $pricing_item['title'] = $pricing_item['name'];
+
+     include 'shared/why_us.php'; 
+
+     ?>
+
+   <!-- Why Choose Us Four-->
+
 
 <?php
 

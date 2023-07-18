@@ -14,21 +14,21 @@
         <div class="auto-container">
             <div class="row" style="padding-bottom: 50px;">
                 <!-- Content Column -->
-                <div class="content-column col-lg-9 col-md-12">
+                <div class="content-column col-lg-8 col-md-12">
                     <div class="content-box" >
-                        <h4 class="sub-title wow fadeInUp" data-wow-delay="400ms"><i class="icon icon-bars"></i> <?php echo $slider['heading']; ?></h4>
-                        <h3 class="title wow fadeInUp" data-wow-delay="800ms">
+                        <h4 class="sub-title wow fadeInUp" data-wow-delay="300ms"><i class="icon icon-bars"></i> <?php echo $slider['heading']; ?></h4>
+                        <h3 class="title wow fadeInUp" data-wow-delay="400ms">
                          <?php echo nl2br($slider['content']); ?></h3>
-                        <div class="btn-box wow fadeInUp" data-wow-delay="1200ms">
+                        <div class="btn-box wow fadeInUp" data-wow-delay="600ms">
                             <a href="<?php echo $slider['button1_url']; ?>" class="theme-btn btn-style-one"><span class="btn-title"><?php echo $slider['button1_text']; ?> <i class="fa fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
                 <!-- Image Column -->
-                <div class="image-column col-lg-3 col-md-12">
+                <div class="image-column col-lg-4 col-md-12">
                     <div class="inner-column">
                         <div class="image-box">
-                            <figure class="image wow fadeInUp" data-wow-delay="1600ms"><img src="<?=base_url('public/site/images/main-slider/men.png')?>"  alt=""></figure>
+                            <figure class="image wow fadeInUp" data-wow-delay="200ms"><img src="<?=base_url('public/site/images/resource/home-01-01.png')?>"  alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -36,49 +36,29 @@
         </div>
     </section>
     <!-- End Banner Section Three -->
-    <!-- Services Section -->
+
+
+    <?php if($page_home['home_why_choose_status'] == 'Show'): ?>
+    <!-- home_why_choose_status Section -->
     <section class="services-section pull-up">     
         <div class="auto-container">
             <div class="outer-box">
                 <div class="row">
                     <!-- Service Block-->
+                    <?php foreach ($why_choose as $row) { ?>
                     <div class="service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="<?=base_url('public/site/images/resource/service-1.jpg')?>" alt=""></figure>
-                                <i class="icon flaticon-smarthome"></i>
+                                <figure class="image"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt=""></figure>
+                                <i class="<?php echo $row['icon']; ?>"></i>
                             </div>
                             <div class="content-box">
-                                <h5 class="title"><a href="#">Home Broadband <br>Internet</a></h5>
+                                <h5 class="title"><a href="#"><?php echo $row['name']; ?></a></h5>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Service Block-->
-                    <div class="service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="<?=base_url('public/site/images/resource/service-2.jpg')?>" alt=""></figure>
-                                <i class="icon flaticon-router"></i>
-                            </div>
-                            <div class="content-box">
-                                <h5 class="title"><a href="#">Corporate/Office <br>Internet</a></h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Block-->
-                    <div class="service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="<?=base_url('public/site/images/resource/service-3.jpg')?>" alt=""></figure>
-                                <i class="icon flaticon-monitor"></i>
-                            </div>
-                            <div class="content-box">
-                                <h5 class="title"><a href="#">Fibre Enabled <br>Connections</a></h5>
-                            </div>
-                        </div>
-                    </div>
+                    <?php }  ?>
                 </div>
             </div>
 
@@ -87,6 +67,8 @@
         </div>
     </section>
     <!--End Services Section -->
+
+<?php endif; ?>
     
     <!-- About Section Five -->
     <section class="about-section-five">
@@ -122,14 +104,8 @@
                 </div>
             </div>
 
-            <div class="cta-box wow fadeInDown">
-                <div class="info-box">
-                    <i class="icon fa fa-wifi"></i>
-                    <div class="text">Call Us Now for Connection</div>
-                    <h4 class="title"><a href="tel:1111111">+256 705 678 0895</a></h4>
-                </div>
-                <figure class="image"><img src="<?=base_url('public/site/images/icons/dotted-map.png')?>" alt=""></figure>
-            </div>
+            <?php include 'shared/call_cta.php'; ?>
+            
         </div>
     </section>
     <!-- End About Section -->
@@ -147,7 +123,7 @@
                     <div class="counter-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                         <div class="inner">
                             <div class="content">
-                                <i class="<?php echo $page_home['counter_'.$i.'_icon']; ?>"></i>
+                                <i class=" text-theme2 <?php echo $page_home['counter_'.$i.'_icon']; ?>"></i>
                                 <div class="count-box">
                                     <span class="count-text" data-speed="3000" data-stop="<?php echo $page_home['counter_'.$i.'_value']; ?>">0</span>
                                     <?php echo ($i == 1)?'%':'+'; ?>
@@ -185,7 +161,7 @@
                                 <?php echo $page_home['home_feature_subtitle']; ?></h4>
                        
                         <div class="text  text-white">
-                            <?php echo $page_home['home_feature_desscription']; ?><</div>
+                            <?php echo $page_home['home_feature_desscription']; ?></div>
                     </div>
                 </div>
 
@@ -198,7 +174,6 @@
                             <li>
                                 <i class="<?php  echo $row['icon']; ?>  text-theme2"></i>
                                 <h5 class="title"><a href="#"><?php echo $row['name']; ?></a></h5>
-                                <!-- <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a> -->
                             </li>
                         <?php endforeach; ?>
 
@@ -226,8 +201,9 @@
                                 <div class="text">Get connected to cheetanet  and enjoy your life online, you definitely deserve the best.</div>
                             </div>
                             <div class="info-box">
-                                <div class="info"><i class="icon fa fa-laptop-mobile"></i>From UGX 105,000 /<sub>Month</sub></div>
-                                <a href="#" class="theme-btn btn-style-one dark-bg"><span class="btn-title">Get Started Now
+                                <div class="info"><i class="icon fa fa-laptop-mobile"></i>From UGX 
+                                    <?php echo number_format($pricing_table[0]['price']); ?> /<sub>Month</sub></div>
+                                <a href="<?php echo base_url('services'); ?>" class="theme-btn btn-style-one dark-bg"><span class="btn-title">Get Started Now
                                         <i class="fa fa-arrow-right"></i></span></a>
                             </div>
                         </div>
@@ -246,94 +222,14 @@
     <!--End Call To Action -->
 
     <!-- Why Choose Us Four -->
-    <section class="why-choose-us-four pt-0">
-        <div class="bg bg-pattern-2"></div>
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <span class="sub-title">Why choose us</span>
-                <h2>Why you should use cheetanet <br> internet</h2>
-            </div>
-            <div class="row">
-                <!-- Info Banner -->
-                <div class="info-banner col-lg-6 col-md-12 col-sm-12">
-                    <div class="content-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/image-1.png')?>" alt=""></figure>
-                        <h4 class="title">Cheetahnet Home Internet</h4>
-                        <div class="price">Starting From <span class="color2">UGX 105,000</span> / <small>Month</small></div>
-                        <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Service Block Two-->
-                <div class="service-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/service-4.png')?>" alt=""></figure>    
-                        <div class="icon-box"><i class="icon flaticon-call"></i></div>
-                        <h6 class="title"><a href="#">24/7 Call Service</a></h6>
-                        <div class="text">To get started with us, please go over all of our internet plans</div>
-                        <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
+     
+     <?php 
 
-                <!-- Service Block Two-->
-                <div class="service-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/service-4.png')?>" alt=""></figure>
-                        <div class="icon-box"><i class="icon flaticon-fire"></i></div>
-                        <h6 class="title"><a href="#">Uptime Guaranteed</a></h6>
-                        <div class="text">To get started with us, please go over all of our internet plans</div>
-                        <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
+     $pricing_item = $pricing_table[0];
+     include 'shared/why_us.php'; 
 
-                <!-- Service Block Two-->
-                <div class="service-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/service-4.png')?>" alt=""></figure>
-                        <div class="icon-box"><i class="icon flaticon-headphone"></i></div>
-                        <h6 class="title"><a href="#">Advance Monitoring</a></h6>
-                        <div class="text">To get started with us, please go over all of our internet plans</div>
-                        <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
+     ?>
 
-                <!-- Service Block Two-->
-                <div class="service-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/service-4.png')?>" alt=""></figure>
-                        <div class="icon-box"><i class="icon flaticon-router"></i></div>
-                        <h6 class="title"><a href="#">Fastest Speeds</a></h6>
-                        <div class="text">To get started with us, please go over all of our internet plans</div>
-                        <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Service Block Two-->
-                <div class="service-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/service-4.png')?>" alt=""></figure>
-                        <div class="icon-box"><i class="icon flaticon-laptop"></i></div>
-                        <h6 class="title"><a href="#">IPv6 Supported</a></h6>
-                        <div class="text">To get started with us, please go over all of our internet plans</div>
-                        <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Service Block Two-->
-                <div class="service-block-two col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/service-4.png')?>" alt=""></figure>
-                        <div class="icon-box"><i class="icon flaticon-planet"></i></div>
-                        <h6 class="title"><a href="#">Fiber Connection</a></h6>
-                        <div class="text">To get started with us, please go over all of our internet plans</div>
-                        <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--End Why Choose Us Four -->
 
     <!-- About-us-section Six -->
@@ -440,7 +336,7 @@
                         <div class="inner-column">
                             <div class="title-box">
                                 <div class="count-box"><span class="count-text" data-speed="500" data-stop="500">0</span>+</div>
-                                <h3 class="title">Customers from  love us</h3>
+                                <h3 class="title">Customers love us</h3>
                             </div>
                         </div>
                     </div>
@@ -500,7 +396,8 @@
     </section>
     <!-- End Testimonial Section -->
 
-    <!-- News Section -->
+<?php /*
+   <!--   News Section -->
     <section class="news-section">
         <div class="auto-container">
             <div class="sec-title">
@@ -574,7 +471,9 @@
             </div>
         </div>
     </section>
-    <!--End News Section -->
+    <!--End News Section --> -->
+
+    */ ?>
 
     <!-- Main Footer -->
 <?php

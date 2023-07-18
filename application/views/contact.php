@@ -68,51 +68,50 @@
     <!--Contact Details End-->
 
     <section class="mb--100 position-relative">
-        <div class="auto-container contact-details-call card">
+        <div class="auto-container contact-details-call card" style="padding-top: 20px;">
+
             <div class="row">
-                <!-- Feature Block Three -->
-                <div class="col-lg-4 col-md-6">
-                    <ul class="list-unstyled contact-details__info">
-                        <li>
-                            <div class="icon">
-                                <span class="lnr-icon-phone-plus"></span>
-                            </div>
-                            <div class="text">
-                                <h6>Have any question?</h6>
-                                <a href="tel:980089850"><span>Free</span> +92 (020)-9850</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Feature Block Three -->
-                <div class="col-lg-4 col-md-6">
-                    <ul class="list-unstyled contact-details__info">
-                        <li>
-                            <div class="icon">
-                                <span class="lnr-icon-envelope1"></span>
-                            </div>
-                            <div class="text">
-                                <h6>Write email</h6>
-                                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Feature Block Three -->
-                <div class="col-lg-4 col-md-6">
-                    <ul class="list-unstyled contact-details__info">
-                        <li>
-                            <div class="icon">
-                                <span class="lnr-icon-location"></span>
-                            </div>
-                            <div class="text">
-                                <h6>Visit anytime</h6>
-                                <span>Broklyn street New York</span>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="col-xl-4 col-md-6">
+                <div class="contact-item flex">
+                    <div class="contact-icon">
+                        <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4><?php echo ADDRESS; ?></h4>
+                        <p>
+                            <?php echo nl2br($page_contact['contact_address']); ?>
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="contact-item flex">
+                    <div class="contact-icon">
+                        <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4><?php echo PHONE_NUMBER; ?></h4>
+                        <p>
+                            <?php echo nl2br($page_contact['contact_phone']); ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="contact-item flex">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4><?php echo EMAIL_ADDRESS; ?></h4>
+                        <p>
+                            <?php echo nl2br($page_contact['contact_email']); ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </div>
     </section>
 
@@ -132,9 +131,6 @@
                         Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all. With the help of our experienced network engineers, we ensure the most efficient Network.
                          </div>
 
-                         <div class="text">
-                        Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all. With the help of our experienced network engineers, we ensure the most efficient Network.
-                         </div>
                         <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
                     </div>
                 </div>
@@ -143,7 +139,7 @@
                 <div class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
                     <div class="inner-column">
                         <div class="image-box">
-                            <figure class="image wow fadeIn"><img src="images/resource/about-6.png" alt=""></figure>
+                            <figure class="image wow fadeIn"><img src="<?php echo base_url('public/site/images/resource/pricing-3.png'); ?>" alt=""></figure>
                             <div class="exp-box">
                                 <i class="icon flaticon-world"></i>
                                 <div class="text">Expereince <br>The Best Internet</div>
@@ -163,18 +159,12 @@
         <div class="container-fluid p-0">
             <div class="row">
                 <!-- Google Map HTML Codes -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843149788316!2d144.9537131159042!3d-37.81714274201087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sbn!2sbd!4v1583760510840!5m2!1sbn!2sbd" data-tm-width="100%" height="500" frameborder="0" allowfullscreen=""></iframe>
+                <?php  //echo $page_contact['contact_map']; ?>
+
             </div>
 
 
-            <div class="cta-box wow fadeInDown"  style="margin-top: 10px;">
-                <div class="info-box">
-                    <i class="icon fa fa-wifi"></i>
-                    <div class="text">Call Us Now for Connection</div>
-                    <h4 class="title"><a href="tel:1111111">+256 705 678 0895</a></h4>
-                </div>
-                <figure class="image"><img src="images/icons/dotted-map.png" alt=""></figure>
-            </div>
+            <?php include 'shared/call_cta.php'; ?>
         </div>
     </section>
 

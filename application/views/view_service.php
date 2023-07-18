@@ -14,9 +14,8 @@
 <div class="service-page pt_60 pb_90">
     <div class="container">
         <div class="row">
-            <?php
-            foreach ($services as $row) {
-                ?>
+            <?php  foreach ($services as $row) { ?>
+
                <div class="col-lg-3 col-md-6">
                     <div class="services-item effect-item">
                         <a href="<?php echo base_url(); ?>services/view/<?php echo $row['id']; ?>" class="image-effect">
@@ -33,9 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <?php
-            }
-            ?>
+           <?php } ?>
         </div>
     </div>
 </div>

@@ -185,6 +185,12 @@
 			          </a>
 			        </li>
 
+			           <li class="treeview <?php if( ($class_name == 'why_choose') ) {echo 'active';} ?>">
+			          <a href="<?php echo base_url(); ?>admin/why_choose">
+			            <i class="fa fa-gift"></i> <span>Why choose us</span>
+			          </a>
+			        </li>
+
 
 
 			        <li class="treeview <?php if( ($class_name == 'portfolio')||($class_name == 'portfolio_category') ) {echo 'active';} ?>">

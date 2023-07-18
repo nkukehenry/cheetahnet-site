@@ -7,7 +7,7 @@
  
     
     <!-- About Section Five -->
-    <section class="about-section-five" style="margin-top: 0!important;">
+    <section class="about-section-five" style="margin-top: -60px!important;">
         <div class="auto-container">
             <div class="row">
                 <!-- Content Column -->
@@ -17,14 +17,7 @@
                             <span class="sub-title">About Us</span>
                             <h2>Giving you freedom to explore the world with the fastest internet</h2>
                         </div>
-                        <div class="text">
-                        Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all. With the help of our experienced network engineers, we ensure the most efficient Network.
-                         </div>
-
-                         <div class="text">
-                        Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all. With the help of our experienced network engineers, we ensure the most efficient Network.
-                         </div>
-                        <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
+                        <div class="text"><?php echo $page_about['about_content']; ?></div>
                     </div>
                 </div>
 
@@ -32,17 +25,17 @@
                 <div class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
                     <div class="inner-column">
                         <div class="image-box">
-                            <figure class="image wow fadeIn"><img src="<?=base_url('public/site/images/resource/about-6.png')?>" alt=""></figure>
+                            <figure class="image wow fadeIn"><img src="<?=base_url('public/site/images/resource/work-01.png')?>" alt=""></figure>
                             <div class="exp-box">
                                 <i class="icon flaticon-world"></i>
-                                <div class="text">Expereince <br>The Best Internet</div>
+                                <div class="text text-white">Expereince <br>The Best Internet</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="cta-box wow fadeInDown"  style="margin-top: 10px;">
+            <div class="cta-box wow fadeInDown"  style="margin-top: 70px;">
                 <div class="info-box">
                     <i class="icon fa fa-wifi"></i>
                     <div class="text">Call Us Now for Connection</div>
@@ -52,8 +45,76 @@
             </div>
         </div>
     </section>
-    <!-- End About Section -->
-    
+
+   
+
+        <!-- why-choose-us Two -->
+    <section class="why-choose-us-two bg-theme2">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="sub-title text-white">Why select us</span>
+                <h2>Why you use netofix <br>fibre internet</h2>
+            </div>
+            <div class="row">
+                <!-- Features Column -->
+                <div class="features-column col-lg-8 col-md-12 order-2 wow fadeInRight">
+                    <div class="inner-column">
+
+                        <div class="row g-0">
+                            <!-- Feature Block Two -->
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><i class="icon flaticon-router"></i></div>
+                                    <h5 class="title"><a href="">Fastest <br>Broadband speeds</a></h5>
+                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
+                                </div>
+                            </div>
+                            <!-- Feature Block -->
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><i class="icon flaticon-call"></i></div>
+                                    <h5 class="title"><a href="">24/7 Hotline<br>service</a> </h5>
+                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
+                                </div>
+                            </div>
+                            <!-- Feature Block -->
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><i class="icon flaticon-headphone"></i></div>
+                                    <h5 class="title"><a href="page-service-details.html">Advance <br> Monitoring</a></h5>
+                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
+                                </div>
+                            </div>
+                            <!-- Feature Block -->
+                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><i class="icon flaticon-fire"></i></div>
+                                    <h5 class="title"><a href="page-service-details.html">98%+ Uptime <br> guaranteed.</a></h5>
+                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Info Banner -->
+                <div class="info-banner-two col-lg-4 col-md-12 col-sm-12 wow fadeInLeft">
+                    <div class="content-box">
+                        <figure class="image"><img src="<?=base_url('public/site/images/resource/service-3.jpg')?>" alt=""></figure>
+                        <h4 class="title">Cheetanet <br>Basic Package</h4>
+                        <div class="price">Starting From <br><strong class="amount">UGX 105,000</strong> / <small>Month</small></div>
+                        <div class="btn-box animate-2">
+                            <a href="page-pricing.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End why-choose-us Two -->
+
+
    
     <!-- Services Section Three -->
     <section class="services-section-three">
@@ -112,74 +173,6 @@
     <!-- End About Section -->
 
 
-
-        <!-- why-choose-us Two -->
-    <section class="why-choose-us-two bg-theme2">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <span class="sub-title">Why select us</span>
-                <h2>Why you use netofix <br>fibre internet</h2>
-            </div>
-            <div class="row">
-                <!-- Features Column -->
-                <div class="features-column col-lg-8 col-md-12 order-2 wow fadeInRight">
-                    <div class="inner-column">
-
-                        <div class="row g-0">
-                            <!-- Feature Block Two -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-router"></i></div>
-                                    <h5 class="title"><a href="">Fastest <br>Broadband speeds</a></h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                            <!-- Feature Block -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-call"></i></div>
-                                    <h5 class="title"><a href="">24/7 Hotline<br>service</a> </h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                            <!-- Feature Block -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-headphone"></i></div>
-                                    <h5 class="title"><a href="page-service-details.html">Advance <br> Monitoring</a></h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                            <!-- Feature Block -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-fire"></i></div>
-                                    <h5 class="title"><a href="page-service-details.html">98%+ Uptime <br> guaranteed.</a></h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Info Banner -->
-                <div class="info-banner-two col-lg-4 col-md-12 col-sm-12 wow fadeInLeft">
-                    <div class="content-box">
-                        <figure class="image"><img src="<?=base_url('public/site/images/resource/image-3.jpg')?>" alt=""></figure>
-                        <h4 class="title">Cheetanet <br>Home Wifi</h4>
-                        <div class="price">Starting From <br><strong class="amount">$49.9</strong> / <small>Month</small></div>
-                        <div class="btn-box animate-2">
-                            <a href="page-pricing.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End why-choose-us Two -->
-
-    <!-- End About Section Six -->
 
 
     <!-- Main Footer -->

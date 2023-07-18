@@ -18,7 +18,7 @@
                         <div class="inner">
                             <i class="icon lnr lnr-icon-phone-handset"></i>
                             <span class="sub-title">Call Us On</span>
-                            <div class="text"><a href="tel:+25678654528">+256 705 654 528</a></div>
+                            <div class="text"><a href="tel:<?php echo explode('/',$setting['top_bar_phone'])[0]; ?>"><?php echo explode('/',$setting['top_bar_phone'])[0]; ?></a></div>
                         </div>
                     </div>
                     <!-- Contact info Block -->
@@ -26,7 +26,7 @@
                         <div class="inner">
                             <i class="icon lnr lnr-icon-envelope1"></i>
                             <span class="sub-title">Mail to Us</span>
-                            <div class="text"><a href="mailto:Cheetahnet@support.com">Cheetahnet@support.com</a></div>
+                            <div class="text"><a href="mailto:<?php echo explode('/',$setting['top_bar_email'])[0]; ?>"><?php echo explode('/',$setting['top_bar_email'])[0]; ?></a></div>
                         </div>
                     </div>
                 </div>
