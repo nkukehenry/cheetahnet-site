@@ -26,8 +26,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Africa/Kampala');
 //$config['base_url'] = 'http://' . $_SERVER['HTTP_HOST'].'/cheetah/';
 
-$config['base_url'] = 'http://localhost/cheetanet/';
-//$config['base_url'] = 'http://' . $_SERVER['HTTP_HOST'].'/';
+//$config['base_url'] = 'http://localhost/cheetanet/';
+$config['base_url'] = 'http://' . $_SERVER['HTTP_HOST'].'/';
 
 define("DETAILS", "View More");
 define("MAIN_COLOR",'#FF6A00');

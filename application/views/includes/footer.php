@@ -69,7 +69,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-md-6">
+                           <!-- <div class="col-lg-6 col-md-6">
                                 <div class="widget links-widget">
                                     <h6 class="widget-title">Services</h6>
                                     <div class="widget-content">
@@ -80,7 +80,7 @@
                                         </ul>                                
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
 
