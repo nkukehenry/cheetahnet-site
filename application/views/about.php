@@ -9,7 +9,7 @@
     <!-- About Section Five -->
     <section class="about-section-five" style="margin-top: 0px!important;">
         <div class="auto-container">
-            <div class="row">
+            <div class="row" style="margin-top: -60px!important;">
                 <!-- Content Column -->
                 <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2 wow fadeInRight">
                     <div class="inner-column">
