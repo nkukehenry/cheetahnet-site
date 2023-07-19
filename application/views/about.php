@@ -35,14 +35,8 @@
                 </div>
             </div>
 
-            <div class="cta-box wow fadeInDown"  style="margin-top: 70px;">
-                <div class="info-box">
-                    <i class="icon fa fa-wifi"></i>
-                    <div class="text">Call Us Now for Connection</div>
-                    <h4 class="title"><a href="tel:1111111">+256 705 678 0895</a></h4>
-                </div>
-                <figure class="image"><img src="<?=base_url('public/site/images/icons/dotted-map.png')?>" alt=""></figure>
-            </div>
+            <?php include 'shared/call_cta.php'; ?>
+
         </div>
     </section>
 
@@ -131,7 +125,7 @@
                        
                         <div class="text">Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all.  With the help of our experienced network engineers.
                         <br><br>
-                        Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all.  With the help of our experienced network engineers.</div>
+                        Our internet services are intended to be affordable, reliable and amazingly world class standard.</div>
                     </div>
                 </div>
 
