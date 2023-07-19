@@ -7,7 +7,7 @@
  
     
     <!-- About Section Five -->
-    <section class="about-section-five" style="margin-top: -60px!important;">
+    <section class="about-section-five" style="margin-top: -40px!important;">
         <div class="auto-container">
             <div class="row">
                 <!-- Content Column -->
