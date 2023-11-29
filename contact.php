@@ -196,9 +196,120 @@
     </header>
     <!--End Main Header -->
  
+    <!--Contact Details Start-->
+    <section class="contact-details">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="contact-details__right">
+                        <div class="sec-title">
+                            <span class="sub-title">Need any help?</span>
+                            <h2>Get in touch with us</h2>
+                            <div class="text">Lorem ipsum is simply free text available dolor sit amet consectetur notted adipisicing elit sed do eiusmod tempor incididunt simply dolore magna.</div>
+                        </div>
+                        <div class="blog-details__social-list">
+                            <a href="shop-product-details.html"><i class="fab fa-twitter"></i></a>
+                            <a href="shop-product-details.html"><i class="fab fa-facebook"></i></a>
+                            <a href="shop-product-details.html"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="shop-product-details.html"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 offset-xl-1 col-lg-6">
+                    <!-- Contact Form -->
+                    <form id="contact_form" name="contact_form" class="" action="http://kodesolution.com/html/2023/netofix-html/includes/sendmail.php" method="post">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                            <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
+                            <button type="reset" class="theme-btn btn-style-one bg-theme-color5"><span class="btn-title">Reset</span></button>
+                        </div>
+                    </form>
+                    <!-- Contact Form Validation-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Details End-->
+
+    <section class="mb--100 position-relative">
+        <div class="auto-container contact-details-call card">
+            <div class="row">
+                <!-- Feature Block Three -->
+                <div class="col-lg-4 col-md-6">
+                    <ul class="list-unstyled contact-details__info">
+                        <li>
+                            <div class="icon">
+                                <span class="lnr-icon-phone-plus"></span>
+                            </div>
+                            <div class="text">
+                                <h6>Have any question?</h6>
+                                <a href="tel:980089850"><span>Free</span> +92 (020)-9850</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Feature Block Three -->
+                <div class="col-lg-4 col-md-6">
+                    <ul class="list-unstyled contact-details__info">
+                        <li>
+                            <div class="icon">
+                                <span class="lnr-icon-envelope1"></span>
+                            </div>
+                            <div class="text">
+                                <h6>Write email</h6>
+                                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Feature Block Three -->
+                <div class="col-lg-4 col-md-6">
+                    <ul class="list-unstyled contact-details__info">
+                        <li>
+                            <div class="icon">
+                                <span class="lnr-icon-location"></span>
+                            </div>
+                            <div class="text">
+                                <h6>Visit anytime</h6>
+                                <span>Broklyn street New York</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
     <!-- About Section Five -->
-    <section class="about-section-five" style="margin-top: 0!important;">
+    <section class="about-section-five pt-10" style="margin-top: 0!important;">
         <div class="auto-container">
             <div class="row">
                 <!-- Content Column -->
@@ -233,6 +344,20 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+    
+
+
+    <!-- Divider: Google Map -->
+    <section>
+        <div class="container-fluid p-0">
+            <div class="row">
+                <!-- Google Map HTML Codes -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843149788316!2d144.9537131159042!3d-37.81714274201087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sbn!2sbd!4v1583760510840!5m2!1sbn!2sbd" data-tm-width="100%" height="500" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+
+
             <div class="cta-box wow fadeInDown"  style="margin-top: 10px;">
                 <div class="info-box">
                     <i class="icon fa fa-wifi"></i>
@@ -243,132 +368,7 @@
             </div>
         </div>
     </section>
-    <!-- End About Section -->
-    
-   
-    <!-- Services Section Three -->
-    <section class="services-section-three">
-        <div class="bg bg-image right-image" style="background-image: url(images/background/8.png)"></div>
-        <div class="auto-container">
-            <div class="row">
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12 wow fadeInRight">
-                    <div class="inner-column">
-                        <div class="sec-title">
-                            <h2>Our promise to customers</h2>
-                        </div>
-                            <h4 class="title">We provide the fastest  and most reliable internet services in Uganda, with unbeatble prices rates.</h4>
-                       
-                        <div class="text">Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all.  With the help of our experienced network engineers.
-                        <br><br>
-                        Cheetahnet Internet is providing one of the fastest broadband internet and network solutions throughout Kampala, reliable for all.  With the help of our experienced network engineers.</div>
-                    </div>
-                </div>
 
-                <!-- Services Column -->
-                <div class="services-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
-                    <div class="inner-column">
-                        <ul class="services-list">
-                            <li>
-                                <i class="icon flaticon-router text-theme2"></i>
-                                <h5 class="title"><a href="#">Top Class HArdware</a></h5>
-                                <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                            </li>
-                            <li>
-                                <i class="icon flaticon-smarthome text-theme2"></i>
-                                <h5 class="title"><a href="#">Dedicated Connections</a></h5>
-                                <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                            </li>
-                            <li>
-                                <i class="icon flaticon-laptop text-theme2"></i>
-                                <h5 class="title"><a href="#">Firbe Connectivity</a></h5>
-                                <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                            </li>
-                            <li>
-                                <i class="icon flaticon-planet text-theme2"></i>
-                                <h5 class="title"><a href="#">Fast Downloads & Uploads</a></h5>
-                                <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                            </li>
-                            <li>
-                                <i class="icon flaticon-fire text-theme2"></i>
-                                <h5 class="title"><a href="#">Always Available</a></h5>
-                                <a href="#" class="read-more"><i class="fa fa-arrow-right"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About Section -->
-
-
-
-        <!-- why-choose-us Two -->
-    <section class="why-choose-us-two bg-theme2">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <span class="sub-title">Why select us</span>
-                <h2>Why you use netofix <br>fibre internet</h2>
-            </div>
-            <div class="row">
-                <!-- Features Column -->
-                <div class="features-column col-lg-8 col-md-12 order-2 wow fadeInRight">
-                    <div class="inner-column">
-
-                        <div class="row g-0">
-                            <!-- Feature Block Two -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-router"></i></div>
-                                    <h5 class="title"><a href="page-service-details.html">Fastest <br>Broadband speeds</a></h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                            <!-- Feature Block -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-call"></i></div>
-                                    <h5 class="title"><a href="page-service-details.html">24/7 Hotline<br>service</a> </h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                            <!-- Feature Block -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-headphone"></i></div>
-                                    <h5 class="title"><a href="page-service-details.html">Advance <br> Monitoring</a></h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                            <!-- Feature Block -->
-                            <div class="feature-block-two col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="icon flaticon-fire"></i></div>
-                                    <h5 class="title"><a href="page-service-details.html">98%+ Uptime <br> guaranteed.</a></h5>
-                                    <div class="text">Cheetanet Internet is providing one of the fastest broadband internet</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Info Banner -->
-                <div class="info-banner-two col-lg-4 col-md-12 col-sm-12 wow fadeInLeft">
-                    <div class="content-box">
-                        <figure class="image"><img src="images/resource/image-3.jpg" alt=""></figure>
-                        <h4 class="title">Cheetanet <br>Home Wifi</h4>
-                        <div class="price">Starting From <br><strong class="amount">$49.9</strong> / <small>Month</small></div>
-                        <div class="btn-box animate-2">
-                            <a href="page-pricing.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started Now <i class="fa fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End why-choose-us Two -->
 
     <!-- End About Section Six -->
 

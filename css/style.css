@@ -8025,3 +8025,15 @@ Section Title
     font-weight: bold;
   }
 
+  .rounded{
+    border-radius: 12px;
+    padding: 10px;
+  }
+
+  .contact-details__info .icon{
+
+    padding: 10px;
+    font-size: 14pt;
+
+  }
+
